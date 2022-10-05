@@ -22,6 +22,8 @@ namespace Leap.Unity.Interaction
     public class InteractionButton : InteractionBehaviour
     {
 
+        public GameObject ObjectToSpawn;
+
         #region Inspector
 
         [Header("UI Control")]
@@ -418,6 +420,7 @@ namespace Leap.Unity.Interaction
                 // If our depression state has changed since last time...
                 if (isPressed && !oldDepressed)
                 {
+                    Instantiate(ObjectToSpawn, new Vector3(0, 0.196f, 0), Quaternion.identity); 
                     primaryHoveringController.primaryHoverLocked = true;
                     _lockedInteractingController = primaryHoveringController;
 

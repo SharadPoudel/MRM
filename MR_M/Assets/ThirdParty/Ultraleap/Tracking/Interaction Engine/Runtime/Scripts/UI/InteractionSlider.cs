@@ -11,6 +11,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Leap.Unity.Interaction
 {
@@ -22,6 +23,8 @@ namespace Leap.Unity.Interaction
     public class InteractionSlider : InteractionButton
     {
         #region Inspector & Properties
+
+        public Text IntentValue;
 
         public enum SliderType
         {
@@ -238,6 +241,9 @@ namespace Leap.Unity.Interaction
                 _verticalSliderPercent = Mathf.InverseLerp(initialLocalPosition.y + verticalSlideLimits.x, initialLocalPosition.y + verticalSlideLimits.y, localPhysicsPosition.y);
                 VerticalSlideEvent(VerticalSliderValue);
             }
+
+            double RoundedValue = Math.Round(HorizontalSliderValue, 1);
+            IntentValue.text = "Intent Value = " + RoundedValue.ToString();
         }
 
         public float normalizedHorizontalValue
