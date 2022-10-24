@@ -1,5 +1,15 @@
 {
-  "dependencies": {
+    "scopedRegistries": [
+        {
+            "name": "UltraLeap",
+            "url": "https://package.openupm.com",
+            "scopes": [
+                "com.ultraleap"
+            ]
+        }
+    ],
+    "dependencies": {
+    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.10.2.tgz",
     "com.unity.collab-proxy": "1.15.15",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.14",
@@ -40,14 +50,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "scopedRegistries": [
-    {
-      "name": "UltraLeap",
-      "url": "https://package.openupm.com",
-      "scopes": [
-        "com.ultraleap"
-      ]
-    }
-  ]
+  }
 }
