@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DataStreams
       objectReference: {fileID: 0}
+    - target: {fileID: 8234075582983966592, guid: e506c0b8e6b7f1741806258c0ed6f358, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8234075582983966593, guid: e506c0b8e6b7f1741806258c0ed6f358, type: 3}
       propertyPath: m_RootOrder
       value: 11
