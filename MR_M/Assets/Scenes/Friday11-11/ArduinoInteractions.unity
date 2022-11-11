@@ -744,13 +744,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToSpawn: {fileID: 3553229546500959223, guid: 9e85832d34d89f94d92f16b8c2e9cd10, type: 3}
+  Backgroud: {fileID: 251026904}
   IntentValue: {fileID: 1036442017}
   PostProcessVolume: {fileID: 839043905}
   Colors:
-  - {r: 1, g: 0, b: 0.7964039, a: 0}
-  - {r: 0.44906652, g: 1, b: 0.39999998, a: 0}
-  - {r: 0.2443574, g: 0.798987, b: 0.9811321, a: 0}
   - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0.7964039, a: 0}
+  - {r: 0.2443574, g: 0.798987, b: 0.9811321, a: 0}
+  - {r: 0.44906652, g: 1, b: 0.39999998, a: 0}
+  Materials:
+  - {fileID: 2100000, guid: b641d54ea912e0149bbcd3666a424593, type: 2}
+  - {fileID: 2100000, guid: 9f96589ce19c5e945ad3590eb84eb87f, type: 2}
+  - {fileID: 2100000, guid: fa77582a70a6de7478a746273acaf3b3, type: 2}
+  - {fileID: 2100000, guid: a5869f0e3ce36014aa89ecf60dea3693, type: 2}
   RoundedValue: 0
   test: 
 --- !u!4 &748090407
