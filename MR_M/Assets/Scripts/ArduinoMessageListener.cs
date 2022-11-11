@@ -68,9 +68,9 @@ public class ArduinoMessageListener : MonoBehaviour
 
         if (msg.Equals("Pressed"))
 		{
-            if (NumberOfRobots <= 6)
+            if (NumberOfRobots < 3)
             {
-                Instantiate(ObjectToSpawn, new Vector3(NumberOfRobots, 0.196f, 0), Quaternion.identity);
+                Instantiate(ObjectToSpawn, new Vector3((-0.07f + NumberOfRobots), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
             }
         }
