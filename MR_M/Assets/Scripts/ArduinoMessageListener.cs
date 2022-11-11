@@ -26,6 +26,7 @@ public class ArduinoMessageListener : MonoBehaviour
     public PostProcessVolume PostProcessVolume;
     public Color[] Colors;
     public double RoundedValue;
+    public String test;
 
     private Bloom Bloom;
     private ColorParameter ColorParameter;
@@ -39,26 +40,40 @@ public class ArduinoMessageListener : MonoBehaviour
 
 	private void Update()
 	{
-        IntentValue.text = "Intent Value = " + RoundedValue.ToString();
 
-        if (RoundedValue >= 0 && RoundedValue < 0.25)
+        if (test.Equals("p"))
         {
-            ColorParameter.value = Colors[0];
-        }
-        else if (RoundedValue >= 0.25 && RoundedValue <= 0.5)
-        {
-            ColorParameter.value = Colors[1];
-        }
-        else if (RoundedValue >= 0.5 && RoundedValue < 0.75)
-        {
-            ColorParameter.value = Colors[2];
-        }
-        else
-        {
-            ColorParameter.value = Colors[3];
+            if (NumberOfRobots < 3)
+            {
+                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
+                NumberOfRobots++;
+                test = "";
+            }
         }
 
-        Bloom.color.Override(ColorParameter);
+
+
+
+        //IntentValue.text = "Intent Value = " + RoundedValue.ToString();
+
+        //if (RoundedValue >= 0 && RoundedValue < 0.25)
+        //{
+        //    ColorParameter.value = Colors[0];
+        //}
+        //else if (RoundedValue >= 0.25 && RoundedValue <= 0.5)
+        //{
+        //    ColorParameter.value = Colors[1];
+        //}
+        //else if (RoundedValue >= 0.5 && RoundedValue < 0.75)
+        //{
+        //    ColorParameter.value = Colors[2];
+        //}
+        //else
+        //{
+        //    ColorParameter.value = Colors[3];
+        //}
+
+        //Bloom.color.Override(ColorParameter);
     }
 
 	// Invoked when a line of data is received from the serial device.
@@ -70,7 +85,7 @@ public class ArduinoMessageListener : MonoBehaviour
 		{
             if (NumberOfRobots < 3)
             {
-                Instantiate(ObjectToSpawn, new Vector3((-0.07f + NumberOfRobots), 0.125f, -0.1f), Quaternion.identity);
+                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.045f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
             }
         }
