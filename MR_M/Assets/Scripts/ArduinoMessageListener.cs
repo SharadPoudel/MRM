@@ -21,11 +21,14 @@ public class ArduinoMessageListener : MonoBehaviour
 {
 
     public GameObject ObjectToSpawn;
+    public GameObject Backgroud;
     //public Slider Slider;
     public Text IntentValue;
     public PostProcessVolume PostProcessVolume;
     public Color[] Colors;
+    public Material[] Materials;
     public double RoundedValue;
+    public String test;
 
     private Bloom Bloom;
     private ColorParameter ColorParameter;
@@ -39,27 +42,49 @@ public class ArduinoMessageListener : MonoBehaviour
 
 	private void Update()
 	{
-        IntentValue.text = "Intent Value = " + RoundedValue.ToString();
+        //Button
+        if (test.Equals("p"))
+        {
+            if (NumberOfRobots < 3)
+            {
+                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
+                NumberOfRobots++;
+                test = "";
+            }
+        }
 
-        if (RoundedValue >= 0 && RoundedValue < 0.25)
+
+        //Knob
+		IntentValue.text = "Intent Value = " + RoundedValue.ToString();
+
+        if (RoundedValue >= 0 && RoundedValue <= 0.25)
         {
             ColorParameter.value = Colors[0];
+            Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
         }
-        else if (RoundedValue >= 0.25 && RoundedValue <= 0.5)
+        else if (RoundedValue > 0.25 && RoundedValue <= 0.5)
         {
             ColorParameter.value = Colors[1];
+            Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
         }
-        else if (RoundedValue >= 0.5 && RoundedValue < 0.75)
+        else if (RoundedValue > 0.5 && RoundedValue <= 0.75)
         {
             ColorParameter.value = Colors[2];
+            Backgroud.GetComponent<MeshRenderer>().material = Materials[2];
         }
-        else
+        else if (RoundedValue > 0.75 && RoundedValue <= 1)
         {
             ColorParameter.value = Colors[3];
+            Backgroud.GetComponent<MeshRenderer>().material = Materials[3];
+        }
+        else
+		{
+            RoundedValue = 0;
+
         }
 
-        Bloom.color.Override(ColorParameter);
-    }
+		Bloom.color.Override(ColorParameter);
+	}
 
 	// Invoked when a line of data is received from the serial device.
 	void OnMessageArrived(string msg)
@@ -70,7 +95,7 @@ public class ArduinoMessageListener : MonoBehaviour
 		{
             if (NumberOfRobots < 3)
             {
-                Instantiate(ObjectToSpawn, new Vector3((-0.07f + NumberOfRobots), 0.125f, -0.1f), Quaternion.identity);
+                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.045f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
             }
         }
