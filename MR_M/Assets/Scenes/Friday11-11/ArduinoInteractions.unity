@@ -745,7 +745,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToSpawn: {fileID: 3553229546500959223, guid: 9e85832d34d89f94d92f16b8c2e9cd10, type: 3}
   Backgroud: {fileID: 251026904}
-  IntentValue: {fileID: 1036442017}
   PostProcessVolume: {fileID: 839043905}
   Colors:
   - {r: 0, g: 0, b: 0, a: 0}
@@ -757,8 +756,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9f96589ce19c5e945ad3590eb84eb87f, type: 2}
   - {fileID: 2100000, guid: fa77582a70a6de7478a746273acaf3b3, type: 2}
   - {fileID: 2100000, guid: a5869f0e3ce36014aa89ecf60dea3693, type: 2}
-  RoundedValue: 0
-  test: 
 --- !u!4 &748090407
 Transform:
   m_ObjectHideFlags: 0
@@ -1701,7 +1698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2113727737
 MonoBehaviour:
   m_ObjectHideFlags: 0
