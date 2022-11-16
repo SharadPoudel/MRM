@@ -4,24 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Hello_World_Demo.unity
-    guid: 19412c7d6f2051841bbbd02331cab5a4
-  - enabled: 0
-    path: Assets/Scenes/HelloWorldDemo/Arduino_Hello_World_Demo.unity
-    guid: 40d844ac07090074999ed22dee13d224
-  - enabled: 0
-    path: Assets/Scenes/HelloWorldDemo/Leap_Hello_World_Demo.unity
-    guid: ce7d2290464ff76499298ead3ace027c
-  - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Scenes/Hello_World_Demo.unity
-    guid: 19412c7d6f2051841bbbd02331cab5a4
-=======
-    path: Assets/Scenes/RSImageTracking.unity
-    guid: da419d9caa531d94e808996d2d2ea415
->>>>>>> Stashed changes
+  m_Scenes: []
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 69a25eee4eb475a4b9a7989829ad1100, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c1fc3123783d3c14d88d8d88632e4229, type: 2}
