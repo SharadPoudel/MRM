@@ -247,37 +247,40 @@ public class ArduinoMessageListener : MonoBehaviour
                 Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
 
-                //Adding more data flow to all three lines
-                GameObject InstantiatedPinkFlow = Instantiate(PinkFlow, PinkFlow.transform.position, Quaternion.identity);
-                InstantiatedPinkFlow.transform.SetParent(DataFlowsParent[0].transform);
-                InstantiatedPinkFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsPink.Add(InstantiatedPinkFlow);
+                for (int i = 0; i < 2; i++)
+                {
+                    //Adding more data flow to all three lines
+                    GameObject InstantiatedPinkFlow = Instantiate(PinkFlow, PinkFlow.transform.position, Quaternion.identity);
+                    InstantiatedPinkFlow.transform.SetParent(DataFlowsParent[0].transform);
+                    InstantiatedPinkFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsPink.Add(InstantiatedPinkFlow);
 
-                GameObject InstantiatedBlueFlow = Instantiate(BlueFlow, BlueFlow.transform.position, Quaternion.identity);
-                InstantiatedBlueFlow.transform.SetParent(DataFlowsParent[1].transform);
-                InstantiatedBlueFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsBlue.Add(InstantiatedBlueFlow);
+                    GameObject InstantiatedBlueFlow = Instantiate(BlueFlow, BlueFlow.transform.position, Quaternion.identity);
+                    InstantiatedBlueFlow.transform.SetParent(DataFlowsParent[1].transform);
+                    InstantiatedBlueFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsBlue.Add(InstantiatedBlueFlow);
 
-                GameObject InstantiatedGreenFlow = Instantiate(GreenFlow, GreenFlow.transform.position, Quaternion.identity);
-                InstantiatedGreenFlow.transform.SetParent(DataFlowsParent[2].transform);
-                InstantiatedGreenFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsGreen.Add(InstantiatedGreenFlow);
+                    GameObject InstantiatedGreenFlow = Instantiate(GreenFlow, GreenFlow.transform.position, Quaternion.identity);
+                    InstantiatedGreenFlow.transform.SetParent(DataFlowsParent[2].transform);
+                    InstantiatedGreenFlow.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsGreen.Add(InstantiatedGreenFlow);
 
-                //Adding more data flow to all three lines | Reverse
-                GameObject InstantiatedPinkFlowReverse = Instantiate(PinkFlowReverse, PinkFlowReverse.transform.position, Quaternion.identity);
-                InstantiatedPinkFlowReverse.transform.SetParent(DataFlowsParent[0].transform);
-                InstantiatedPinkFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsPink.Add(InstantiatedPinkFlowReverse);
+                    //Adding more data flow to all three lines | Reverse
+                    GameObject InstantiatedPinkFlowReverse = Instantiate(PinkFlowReverse, PinkFlowReverse.transform.position, Quaternion.identity);
+                    InstantiatedPinkFlowReverse.transform.SetParent(DataFlowsParent[0].transform);
+                    InstantiatedPinkFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsPink.Add(InstantiatedPinkFlowReverse);
 
-                GameObject InstantiatedBlueFlowReverse = Instantiate(BlueFlowReverse, BlueFlowReverse.transform.position, Quaternion.identity);
-                InstantiatedBlueFlowReverse.transform.SetParent(DataFlowsParent[1].transform);
-                InstantiatedBlueFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsBlue.Add(InstantiatedBlueFlowReverse);
+                    GameObject InstantiatedBlueFlowReverse = Instantiate(BlueFlowReverse, BlueFlowReverse.transform.position, Quaternion.identity);
+                    InstantiatedBlueFlowReverse.transform.SetParent(DataFlowsParent[1].transform);
+                    InstantiatedBlueFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsBlue.Add(InstantiatedBlueFlowReverse);
 
-                GameObject InstantiatedGreenFlowReverse = Instantiate(GreenFlowReverse, GreenFlowReverse.transform.position, Quaternion.identity);
-                InstantiatedGreenFlowReverse.transform.SetParent(DataFlowsParent[2].transform);
-                InstantiatedGreenFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (NumberOfRobots + 1) * 0.15f;
-                DataFlowsGreen.Add(InstantiatedGreenFlowReverse);
+                    GameObject InstantiatedGreenFlowReverse = Instantiate(GreenFlowReverse, GreenFlowReverse.transform.position, Quaternion.identity);
+                    InstantiatedGreenFlowReverse.transform.SetParent(DataFlowsParent[2].transform);
+                    InstantiatedGreenFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
+                    DataFlowsGreen.Add(InstantiatedGreenFlowReverse);
+                }
             }
         }
         else //Knob rotated
@@ -300,9 +303,19 @@ public class ArduinoMessageListener : MonoBehaviour
                 for (int i = 0; i < DataFlowsPink.Count; i++)
                 {
                     //Disabling flows
-                    DataFlowsPink[i].SetActive(false);
-                    DataFlowsBlue[i].SetActive(false);
-                    DataFlowsGreen[i].SetActive(false);
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
+
+                    //Changing size of flow
+                    DataFlowsPink[i].transform.localScale = NormalSize;
+                    DataFlowsBlue[i].transform.localScale = NormalSize;
+                    DataFlowsGreen[i].transform.localScale = NormalSize;
+
+                    //Changing color of  flow
+                    DataFlowsPink[i].GetComponent<MeshRenderer>().material.color = LightColors[0];
+                    DataFlowsBlue[i].GetComponent<MeshRenderer>().material.color = LightColors[1];
+                    DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
                 }
             }
             else if (RoundedValue >= 0.25 && RoundedValue < 0.5) //Pink mode
