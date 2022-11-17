@@ -37,7 +37,8 @@ namespace Leap.Unity.Interaction
         public GameObject[] DataFlows;
         public GameObject[] DataFlowsParent;
         public GameObject[] Lines;
-
+        public float ObjectNormalSize;
+        public float ObjectBigSize;
         public double RoundedValue;
         public String test;
 
@@ -278,6 +279,7 @@ namespace Leap.Unity.Interaction
                 VerticalSlideEvent(VerticalSliderValue);
             }
 
+            //CODE HERE.. CHANGE HORIZONTAL VALUE AS ZERO 
             double RoundedValue = Math.Round(HorizontalSliderValue, 1);
             //IntentValue.text = "Intent Value = " + RoundedValue.ToString();
 
@@ -413,7 +415,7 @@ namespace Leap.Unity.Interaction
 
 
 
-
+            //CODE TO HERE
 
 
 
@@ -531,8 +533,8 @@ namespace Leap.Unity.Interaction
             DataFlowsBlue = new List<GameObject>();
             DataFlowsGreen = new List<GameObject>();
 
-            NormalSize = new Vector3(0.02f, 0.02f, 0.02f);
-            BiggerSize = new Vector3(0.025f, 0.025f, 0.025f);
+            NormalSize = new Vector3(ObjectNormalSize, ObjectNormalSize, ObjectNormalSize);
+            BiggerSize = new Vector3(ObjectBigSize, ObjectBigSize, ObjectBigSize);
 
             LinePinkFlow = Lines[0];
             LineBlueFlow = Lines[1];

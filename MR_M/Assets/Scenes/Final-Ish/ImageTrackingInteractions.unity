@@ -552,6 +552,8 @@ MonoBehaviour:
   - {fileID: 881735860}
   - {fileID: 375737728}
   - {fileID: 1577301395}
+  ObjectNormalSize: 0.02
+  ObjectBigSize: 0.025
   RoundedValue: 0
   test: 
 --- !u!4 &323582205
@@ -883,7 +885,7 @@ MonoBehaviour:
   mAspectRatio: 1.2018782
   mImageTargetType: 0
   mWidth: 0.6
-  mHeight: 0.721127
+  mHeight: 0.7211269
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1361,6 +1363,8 @@ MonoBehaviour:
   - {fileID: 881735860}
   - {fileID: 375737728}
   - {fileID: 1577301395}
+  ObjectNormalSize: 0
+  ObjectBigSize: 0
   RoundedValue: 0
   test: 
 --- !u!4 &748090407

@@ -1085,6 +1085,8 @@ MonoBehaviour:
   - {fileID: 881735860}
   - {fileID: 375737728}
   - {fileID: 1577301395}
+  ObjectNormalSize: 0.02
+  ObjectBigSize: 0.025
   RoundedValue: 0
   test: 
 --- !u!4 &748090407

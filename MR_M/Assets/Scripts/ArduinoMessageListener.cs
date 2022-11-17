@@ -30,7 +30,8 @@ public class ArduinoMessageListener : MonoBehaviour
     public GameObject[] DataFlows;
     public GameObject[] DataFlowsParent;
     public GameObject[] Lines;
-    
+    public float ObjectNormalSize;
+    public float ObjectBigSize;
     public double RoundedValue;
     public String test;
 
@@ -64,8 +65,8 @@ public class ArduinoMessageListener : MonoBehaviour
         DataFlowsBlue = new List<GameObject>();
         DataFlowsGreen = new List<GameObject>();
 
-        NormalSize = new Vector3(0.02f, 0.02f, 0.02f);
-        BiggerSize = new Vector3(0.025f, 0.025f, 0.025f);
+        NormalSize = new Vector3(ObjectNormalSize, ObjectNormalSize, ObjectNormalSize);
+        BiggerSize = new Vector3(ObjectBigSize, ObjectBigSize, ObjectBigSize);
 
         LinePinkFlow = Lines[0];
         LineBlueFlow = Lines[1];
@@ -280,6 +281,13 @@ public class ArduinoMessageListener : MonoBehaviour
                     InstantiatedGreenFlowReverse.transform.SetParent(DataFlowsParent[2].transform);
                     InstantiatedGreenFlowReverse.GetComponent<BezierSolution.BezierWalkerWithSpeed>().NormalizedT = (i + 1) * 0.15f;
                     DataFlowsGreen.Add(InstantiatedGreenFlowReverse);
+                }
+                for (int i = 0; i < DataFlowsPink.Count; i++)
+                {
+                    //Disabling flows
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
                 }
             }
         }
