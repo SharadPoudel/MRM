@@ -138,9 +138,10 @@ public class ContainerCollider : MonoBehaviour
 
 
 
-                //cODE TILL HERE
+            //cODE TILL HERE
 
-
+            if (collider.gameObject.tag == "Robot")
+                Destroy(collider.gameObject);
 
 
 
