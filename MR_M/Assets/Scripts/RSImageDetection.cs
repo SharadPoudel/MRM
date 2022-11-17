@@ -77,7 +77,6 @@ public class RSImageDetection : MonoBehaviour
         
     }
 
-
     public void ModeImageDetected(int Intent)
     {
         if ( Intent == 0 ) //Neutral mode
@@ -214,16 +213,15 @@ public class RSImageDetection : MonoBehaviour
 
     public void RobotsImageDetected(int NumberOfRobot)
     {
-        Debug.Log("Robot " + NumberOfRobot + 1 + " Detected");
+        Debug.Log("Robot " + (NumberOfRobot + 1) + " Detected");
 
         if (!TrackedImages.Contains(NumberOfRobot))
         {
-            NumberOfRobots++;
-            TrackedImages.Add(NumberOfRobot);
-
             //Adding robots in the box
-            Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobot * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
-            
+            Instantiate(ObjectToSpawn, new Vector3((-0.075f + (TrackedImages.Count * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
+            TrackedImages.Add(NumberOfRobot);
+            NumberOfRobots++;
+
             for (int i = 0; i < 2; i++)
             {
                 //Adding more data flow to all three lines

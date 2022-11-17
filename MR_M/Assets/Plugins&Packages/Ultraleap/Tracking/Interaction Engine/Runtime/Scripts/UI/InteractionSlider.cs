@@ -12,6 +12,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Leap.Unity.Interaction
 {
@@ -24,7 +26,41 @@ namespace Leap.Unity.Interaction
     {
         #region Inspector & Properties
 
-        public Text IntentValue;
+        //public Text IntentValue;
+
+        //public GameObject ObjectToSpawn;
+        public GameObject Backgroud;
+        //public PostProcessVolume PostProcessVolume;
+        public Color[] LightColors;
+        public Color[] BrightColors;
+        public Material[] Materials;
+        public GameObject[] DataFlows;
+        public GameObject[] DataFlowsParent;
+        public GameObject[] Lines;
+
+        public double RoundedValue;
+        public String test;
+
+        //private Bloom Bloom;
+        private int NumberOfRobots = 0;
+        private Vector3 NormalSize;
+        private Vector3 BiggerSize;
+
+        private GameObject PinkFlow;
+        private GameObject BlueFlow;
+        private GameObject GreenFlow;
+
+        private GameObject LinePinkFlow;
+        private GameObject LineBlueFlow;
+        private GameObject LineGreenFlow;
+
+        private GameObject PinkFlowReverse;
+        private GameObject BlueFlowReverse;
+        private GameObject GreenFlowReverse;
+
+        private List<GameObject> DataFlowsPink;
+        private List<GameObject> DataFlowsBlue;
+        private List<GameObject> DataFlowsGreen;
 
         public enum SliderType
         {
@@ -243,7 +279,144 @@ namespace Leap.Unity.Interaction
             }
 
             double RoundedValue = Math.Round(HorizontalSliderValue, 1);
-            IntentValue.text = "Intent Value = " + RoundedValue.ToString();
+            //IntentValue.text = "Intent Value = " + RoundedValue.ToString();
+
+            if (RoundedValue >= 0 && RoundedValue < 0.25) //Neutral mode
+            {
+                //Changing backgroung
+                Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
+
+                //Changing lines color
+                LinePinkFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LinePinkFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+
+                for (int i = 0; i < DataFlowsPink.Count; i++)
+                {
+                    //Disabling flows
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
+
+                    //Changing size of flow
+                    DataFlowsPink[i].transform.localScale = NormalSize;
+                    DataFlowsBlue[i].transform.localScale = NormalSize;
+                    DataFlowsGreen[i].transform.localScale = NormalSize;
+
+                    //Changing color of  flow
+                    DataFlowsPink[i].GetComponent<MeshRenderer>().material.color = LightColors[0];
+                    DataFlowsBlue[i].GetComponent<MeshRenderer>().material.color = LightColors[1];
+                    DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
+                }
+            }
+            else if (RoundedValue >= 0.25 && RoundedValue < 0.5) //Pink mode
+            {
+                //Changing backgroung
+                Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
+
+                //Changing lines color
+                LinePinkFlow.GetComponent<LineRenderer>().startColor = new Color(BrightColors[0].r, BrightColors[0].g, BrightColors[0].b, 1.0f);
+                LinePinkFlow.GetComponent<LineRenderer>().endColor = new Color(BrightColors[0].r, BrightColors[0].g, BrightColors[0].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+
+                for (int i = 0; i < DataFlowsPink.Count; i++)
+                {
+                    //Enabling flows
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
+
+                    //Changing size of flow
+                    DataFlowsPink[i].transform.localScale = BiggerSize;
+                    DataFlowsBlue[i].transform.localScale = NormalSize;
+                    DataFlowsGreen[i].transform.localScale = NormalSize;
+
+                    //Changing color of  flow
+                    DataFlowsPink[i].GetComponent<MeshRenderer>().material.color = BrightColors[0];
+                    DataFlowsBlue[i].GetComponent<MeshRenderer>().material.color = LightColors[1];
+                    DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
+                }
+            }
+            else if (RoundedValue >= 0.5 && RoundedValue < 0.75) //Blue mode
+            {
+                //Changing backgroung
+                Backgroud.GetComponent<MeshRenderer>().material = Materials[2];
+
+                //Changing lines color
+                LinePinkFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LinePinkFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().startColor = new Color(BrightColors[1].r, BrightColors[1].g, BrightColors[1].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().endColor = new Color(BrightColors[1].r, BrightColors[1].g, BrightColors[1].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[2].r, LightColors[2].g, LightColors[2].b, 1.0f);
+
+                for (int i = 0; i < DataFlowsPink.Count; i++)
+                {
+                    //Enabling flows
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
+
+                    //Changing size of flow
+                    DataFlowsPink[i].transform.localScale = NormalSize;
+                    DataFlowsBlue[i].transform.localScale = BiggerSize;
+                    DataFlowsGreen[i].transform.localScale = NormalSize;
+
+                    //Changing color of  flow
+                    DataFlowsPink[i].GetComponent<MeshRenderer>().material.color = LightColors[0];
+                    DataFlowsBlue[i].GetComponent<MeshRenderer>().material.color = BrightColors[1];
+                    DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
+                }
+            }
+            else if (RoundedValue >= 0.75 && RoundedValue < 1) //Green mode
+            {
+                //Changing backgroung
+                Backgroud.GetComponent<MeshRenderer>().material = Materials[3];
+
+                //Changing lines color
+                LinePinkFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LinePinkFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[0].r, LightColors[0].g, LightColors[0].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().startColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineBlueFlow.GetComponent<LineRenderer>().endColor = new Color(LightColors[1].r, LightColors[1].g, LightColors[1].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().startColor = new Color(BrightColors[2].r, BrightColors[2].g, BrightColors[2].b, 1.0f);
+                LineGreenFlow.GetComponent<LineRenderer>().endColor = new Color(BrightColors[2].r, BrightColors[2].g, BrightColors[2].b, 1.0f);
+
+                for (int i = 0; i < DataFlowsPink.Count; i++)
+                {
+                    //Enabling flows
+                    DataFlowsPink[i].SetActive(true);
+                    DataFlowsBlue[i].SetActive(true);
+                    DataFlowsGreen[i].SetActive(true);
+
+                    //Changing size of flow
+                    DataFlowsPink[i].transform.localScale = NormalSize;
+                    DataFlowsBlue[i].transform.localScale = NormalSize;
+                    DataFlowsGreen[i].transform.localScale = BiggerSize;
+
+                    //Changing color of  flow
+                    DataFlowsPink[i].GetComponent<MeshRenderer>().material.color = LightColors[0];
+                    DataFlowsBlue[i].GetComponent<MeshRenderer>().material.color = LightColors[1];
+                    DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = BrightColors[2];
+                }
+            }
+            else //Reset
+            {
+                RoundedValue = 0;
+            }
+
+
+
+
+
+
+
+
         }
 
         public float normalizedHorizontalValue
@@ -354,6 +527,26 @@ namespace Leap.Unity.Interaction
 
         protected override void Start()
         {
+            DataFlowsPink = new List<GameObject>();
+            DataFlowsBlue = new List<GameObject>();
+            DataFlowsGreen = new List<GameObject>();
+
+            NormalSize = new Vector3(0.02f, 0.02f, 0.02f);
+            BiggerSize = new Vector3(0.025f, 0.025f, 0.025f);
+
+            LinePinkFlow = Lines[0];
+            LineBlueFlow = Lines[1];
+            LineGreenFlow = Lines[2];
+
+            PinkFlow = DataFlows[0];
+            BlueFlow = DataFlows[1];
+            GreenFlow = DataFlows[2];
+
+            PinkFlowReverse = DataFlows[3];
+            BlueFlowReverse = DataFlows[4];
+            GreenFlowReverse = DataFlows[5];
+            ///////////////
+
             if (_started) return;
 
             _started = true;

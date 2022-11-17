@@ -802,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 417256401}
   mHiddenRoot: {fileID: 0}
-  mTargetName: automatic_door_6_3_cm
+  mTargetName: GreenMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 417256401}
   mMeshFilter: {fileID: 0}
@@ -877,13 +877,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: automatic_door_6_3_cm
+  mTrackableName: GreenMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.49970666
+  mAspectRatio: 1.2018782
   mImageTargetType: 0
   mWidth: 0.6
-  mHeight: 0.299824
+  mHeight: 0.721127
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1065116486}
   mHiddenRoot: {fileID: 0}
-  mTargetName: atm_3_45_cm
+  mTargetName: BlueMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1065116486}
   mMeshFilter: {fileID: 0}
@@ -2013,7 +2013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: atm_3_45_cm
+  mTrackableName: BlueMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
   mAspectRatio: 1.5000001
@@ -2928,13 +2928,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: current-door-3x6cm
+  mTrackableName: Robot2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 1.8293332
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.6
+  mHeight: 1.0976
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1618029682}
   mHiddenRoot: {fileID: 0}
-  mTargetName: current-door-3x6cm
+  mTargetName: Robot2
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1618029682}
   mMeshFilter: {fileID: 0}
@@ -3006,7 +3006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1619366322}
   mHiddenRoot: {fileID: 0}
-  mTargetName: atm-30x45mm-redmodel-v2
+  mTargetName: DefaultMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1619366322}
   mMeshFilter: {fileID: 0}
@@ -3081,13 +3081,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: atm-30x45mm-redmodel-v2
+  mTrackableName: DefaultMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.5000001
+  mAspectRatio: 0.4993
   mImageTargetType: 0
-  mWidth: 0.03
-  mHeight: 0.045
+  mWidth: 0.06
+  mHeight: 0.029958
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3588,7 +3588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1949790647}
   mHiddenRoot: {fileID: 0}
-  mTargetName: ATM-45x3cm
+  mTargetName: Robot1
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1949790647}
   mMeshFilter: {fileID: 0}
@@ -3663,13 +3663,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: ATM-45x3cm
+  mTrackableName: Robot1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.5000001
+  mAspectRatio: 0.6666666
   mImageTargetType: 0
-  mWidth: 0.03
-  mHeight: 0.045
+  mWidth: 0.6
+  mHeight: 0.4
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3736,7 +3736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2015363183}
   mHiddenRoot: {fileID: 0}
-  mTargetName: current_door_6_3_cm
+  mTargetName: PinkMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 2015363183}
   mMeshFilter: {fileID: 0}
@@ -3811,13 +3811,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: current_door_6_3_cm
+  mTrackableName: PinkMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
   mAspectRatio: 0.4993
   mImageTargetType: 0
-  mWidth: 0.03
-  mHeight: 0.014979
+  mWidth: 0.06
+  mHeight: 0.029958
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
