@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8bce7874fe09e4e9b8ef5e6e00bf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpawn: {fileID: 3553229546500959223, guid: 9e85832d34d89f94d92f16b8c2e9cd10, type: 3}
+  ObjectToSpawn: {fileID: 1282615286086232408, guid: 57540e684bc1c7a4f8e14e11d55f42b9, type: 3}
   Backgroud: {fileID: 251026904}
   LightColors:
   - {r: 0.5803922, g: 0.36078432, b: 0.46274513, a: 0}
@@ -1085,8 +1085,8 @@ MonoBehaviour:
   - {fileID: 881735860}
   - {fileID: 375737728}
   - {fileID: 1577301395}
-  ObjectNormalSize: 0.02
-  ObjectBigSize: 0.025
+  ObjectNormalSize: 0.015
+  ObjectBigSize: 0.015
   RoundedValue: 0
   test: 
 --- !u!4 &748090407
@@ -1098,7 +1098,7 @@ Transform:
   m_GameObject: {fileID: 748090405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -2717,10 +2717,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 214544858}
     m_Modifications:
-    - target: {fileID: 652178132241161996, guid: 2ea4b0472cb60314bb00c96214f06736, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 652178132241162032, guid: 2ea4b0472cb60314bb00c96214f06736, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2773,10 +2769,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkSphereReverse
       objectReference: {fileID: 0}
-    - target: {fileID: 652178132241162039, guid: 2ea4b0472cb60314bb00c96214f06736, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea4b0472cb60314bb00c96214f06736, type: 3}
 --- !u!1001 &4194221253401212880
@@ -2789,10 +2781,6 @@ PrefabInstance:
     - target: {fileID: 4194221253920159411, guid: 8c6d667ede178fe409dca1c5d2293d26, type: 3}
       propertyPath: m_Name
       value: GreenSphereReverse
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194221253920159411, guid: 8c6d667ede178fe409dca1c5d2293d26, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4194221253920159412, guid: 8c6d667ede178fe409dca1c5d2293d26, type: 3}
       propertyPath: m_RootOrder
@@ -2842,10 +2830,6 @@ PrefabInstance:
       propertyPath: spline
       value: 
       objectReference: {fileID: 981834494}
-    - target: {fileID: 4194221253920159416, guid: 8c6d667ede178fe409dca1c5d2293d26, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6d667ede178fe409dca1c5d2293d26, type: 3}
 --- !u!1001 &5056564264231810575
@@ -2907,10 +2891,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkSphere
       objectReference: {fileID: 0}
-    - target: {fileID: 5056564263967969719, guid: 5c4bec8601c6a1c47abb9984d3e64920, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4bec8601c6a1c47abb9984d3e64920, type: 3}
 --- !u!1001 &5874091504379835678
@@ -2920,10 +2900,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1877528997}
     m_Modifications:
-    - target: {fileID: 5874091504250619338, guid: 353e28411d8ef1845a7c22470d49a22e, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 5874091504250619342, guid: 353e28411d8ef1845a7c22470d49a22e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2975,10 +2951,6 @@ PrefabInstance:
     - target: {fileID: 5874091504250619345, guid: 353e28411d8ef1845a7c22470d49a22e, type: 3}
       propertyPath: m_Name
       value: BlueSphereReverse
-      objectReference: {fileID: 0}
-    - target: {fileID: 5874091504250619345, guid: 353e28411d8ef1845a7c22470d49a22e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 353e28411d8ef1845a7c22470d49a22e, type: 3}
@@ -3041,10 +3013,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenSphere
       objectReference: {fileID: 0}
-    - target: {fileID: 6224042949829225402, guid: 28a18bbc8534d2c47aa9885a043d1db4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28a18bbc8534d2c47aa9885a043d1db4, type: 3}
 --- !u!1001 &7450462754418274910
@@ -3061,10 +3029,6 @@ PrefabInstance:
     - target: {fileID: 7450462754262789740, guid: 43190b40223c0a84197ec8707dc1383e, type: 3}
       propertyPath: m_Name
       value: BlueSphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450462754262789740, guid: 43190b40223c0a84197ec8707dc1383e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450462754262789741, guid: 43190b40223c0a84197ec8707dc1383e, type: 3}
       propertyPath: m_RootOrder

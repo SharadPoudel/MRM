@@ -261,7 +261,7 @@ Transform:
   - {fileID: 1065116483}
   - {fileID: 417256398}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214544857
 GameObject:
@@ -286,16 +286,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214544857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18115357, y: -0.6033938, z: 0.108041696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30471134, y: -0.9476838, z: 0.22924009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1229134098}
   - {fileID: 281438141}
   - {fileID: 1455153884}
   - {fileID: 881735864}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 851449059}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251026904
 GameObject:
@@ -446,11 +446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.011147022, y: 0.11400002, z: 0.084194295}
+  m_position: {x: -0.011147007, y: 0.11399999, z: 0.084194295}
   m_precedingControlPointLocalPosition: {x: -0.002725795, y: 0, z: -0.06739568}
-  m_precedingControlPointPosition: {x: -0.013872817, y: 0.11400002, z: 0.016798615}
+  m_precedingControlPointPosition: {x: -0.013872802, y: 0.11399999, z: 0.016798608}
   m_followingControlPointLocalPosition: {x: 0.12993015, y: 0, z: -0.026306182}
-  m_followingControlPointPosition: {x: 0.11878313, y: 0.11400002, z: 0.057888113}
+  m_followingControlPointPosition: {x: 0.118783146, y: 0.11399999, z: 0.057888113}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -491,7 +491,7 @@ Transform:
   - {fileID: 1618029680}
   - {fileID: 1325772297}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323582203
 GameObject:
@@ -522,21 +522,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2051bdaed326c8e4d9c76ed42820a61c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpawn: {fileID: 3553229546500959223, guid: 9e85832d34d89f94d92f16b8c2e9cd10, type: 3}
+  ObjectToSpawn: {fileID: 1282615286086232408, guid: 57540e684bc1c7a4f8e14e11d55f42b9, type: 3}
   Backgroud: {fileID: 251026904}
   LightColors:
-  - {r: 0.7960785, g: 0.5176471, b: 0.6666667, a: 0}
-  - {r: 0.5764706, g: 0.85098046, b: 0.95294124, a: 0}
-  - {r: 0.5803922, g: 0.7725491, b: 0.5529412, a: 0}
+  - {r: 0.5803922, g: 0.3529412, b: 0.45098042, a: 0}
+  - {r: 0.16078432, g: 0.45882356, b: 0.48235297, a: 0}
+  - {r: 0.24705884, g: 0.47058827, b: 0.27058825, a: 0}
   BrightColors:
-  - {r: 0.9215687, g: 0.27058825, b: 0.58431375, a: 0}
+  - {r: 0.909804, g: 0.12941177, b: 0.48235297, a: 0}
   - {r: 0, g: 0.68235296, b: 0.93725497, a: 0}
-  - {r: 0.22352943, g: 0.70980394, b: 0.2901961, a: 0}
+  - {r: 0.46274513, g: 0.7725491, b: 0.3019608, a: 0}
   Materials:
-  - {fileID: 2100000, guid: b641d54ea912e0149bbcd3666a424593, type: 2}
-  - {fileID: 2100000, guid: 9f96589ce19c5e945ad3590eb84eb87f, type: 2}
-  - {fileID: 2100000, guid: fa77582a70a6de7478a746273acaf3b3, type: 2}
-  - {fileID: 2100000, guid: a5869f0e3ce36014aa89ecf60dea3693, type: 2}
+  - {fileID: 2100000, guid: 8bb05d0571f3dfc44976b7cd2be382a7, type: 2}
+  - {fileID: 2100000, guid: 066b99b8804179041936738e7631fc03, type: 2}
+  - {fileID: 2100000, guid: e020f99e66ffe324cbbbf160a978d41f, type: 2}
+  - {fileID: 2100000, guid: 6f0d8bb22236f4242b4d4684a6a86946, type: 2}
   DataFlows:
   - {fileID: 281438136}
   - {fileID: 964533298}
@@ -552,8 +552,8 @@ MonoBehaviour:
   - {fileID: 881735860}
   - {fileID: 375737728}
   - {fileID: 1577301395}
-  ObjectNormalSize: 0.02
-  ObjectBigSize: 0.025
+  ObjectNormalSize: 0.015
+  ObjectBigSize: 0.015
   RoundedValue: 0
   test: 
 --- !u!4 &323582205
@@ -684,23 +684,23 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0.0007414222, y: -0.000000014901161, z: 0.018331628}
   - {x: 0.001352001, y: 0.000000007450581, z: 0.03342825}
-  - {x: 0.0018644556, y: 0, z: 0.046098642}
-  - {x: 0.002311483, y: 0.000000007450581, z: 0.05715153}
-  - {x: 0.0027258098, y: 0, z: 0.06739567}
+  - {x: 0.0018644519, y: 0, z: 0.046098642}
+  - {x: 0.0023114868, y: 0, z: 0.05715153}
+  - {x: 0.002725806, y: 0, z: 0.06739567}
   - {x: 0.0031401291, y: 0, z: 0.07763982}
-  - {x: 0.0035871603, y: 0, z: 0.08869271}
+  - {x: 0.0035871603, y: 0.000000007450581, z: 0.0886927}
   - {x: 0.0040996075, y: 0, z: 0.10136309}
-  - {x: 0.00471019, y: 0, z: 0.116459735}
+  - {x: 0.00471019, y: 0, z: 0.11645973}
   - {x: 0.0054516047, y: 0, z: 0.13479134}
-  - {x: 0.026739996, y: -0.000000014901161, z: 0.1574435}
+  - {x: 0.026739996, y: -0.000000014901161, z: 0.15744348}
   - {x: 0.044271603, y: 0.000000007450581, z: 0.17609823}
-  - {x: 0.05898564, y: 0, z: 0.19175485}
-  - {x: 0.07182129, y: 0.000000007450581, z: 0.20541278}
+  - {x: 0.058985636, y: 0, z: 0.19175485}
+  - {x: 0.07182129, y: 0, z: 0.20541278}
   - {x: 0.08371773, y: 0, z: 0.21807131}
-  - {x: 0.09561419, y: 0, z: 0.23072985}
-  - {x: 0.10844984, y: 0, z: 0.24438778}
+  - {x: 0.095614195, y: 0, z: 0.23072985}
+  - {x: 0.10844983, y: 0.000000007450581, z: 0.24438778}
   - {x: 0.12316387, y: 0, z: 0.2600444}
-  - {x: 0.14069548, y: 0, z: 0.27869913}
+  - {x: 0.1406955, y: 0, z: 0.27869913}
   - {x: 0.16198388, y: 0, z: 0.30135125}
   m_Parameters:
     serializedVersion: 3
@@ -804,7 +804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 417256401}
   mHiddenRoot: {fileID: 0}
-  mTargetName: GreenMode
+  mTargetName: green-mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 417256401}
   mMeshFilter: {fileID: 0}
@@ -879,13 +879,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: GreenMode
+  mTrackableName: green-mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.2018782
+  mAspectRatio: 1.9365064
   mImageTargetType: 0
-  mWidth: 0.6
-  mHeight: 0.7211269
+  mWidth: 0.32
+  mHeight: 0.619682
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -934,11 +934,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.040752202, y: 0.11400002, z: -0.049638756}
+  m_position: {x: -0.040752187, y: 0.11399999, z: -0.049638756}
   m_precedingControlPointLocalPosition: {x: 0.08099194, y: 0, z: 0.15067562}
-  m_precedingControlPointPosition: {x: 0.040239736, y: 0.11400002, z: 0.10103687}
+  m_precedingControlPointPosition: {x: 0.04023975, y: 0.11399999, z: 0.10103687}
   m_followingControlPointLocalPosition: {x: 0.0027258098, y: 0, z: 0.06739567}
-  m_followingControlPointPosition: {x: -0.038026392, y: 0.11400002, z: 0.017756917}
+  m_followingControlPointPosition: {x: -0.038026378, y: 0.11399999, z: 0.017756917}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -971,16 +971,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506868543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18115357, y: -0.6033938, z: 0.108041696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30471134, y: -0.9476838, z: 0.22924009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 981834495}
   - {fileID: 1735085786}
   - {fileID: 588415332}
   - {fileID: 1577301396}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 851449059}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &514730588
 GameObject:
@@ -1025,11 +1025,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.20107073, y: 0.11400002, z: 0.15860336}
+  m_position: {x: -0.20107071, y: 0.11399999, z: 0.15860337}
   m_precedingControlPointLocalPosition: {x: 0.07189262, y: 0, z: -0.037651584}
-  m_precedingControlPointPosition: {x: -0.1291781, y: 0.11400002, z: 0.12095177}
+  m_precedingControlPointPosition: {x: -0.12917809, y: 0.11399999, z: 0.120951764}
   m_followingControlPointLocalPosition: {x: -0.045820147, y: 0, z: -0.09740904}
-  m_followingControlPointPosition: {x: -0.24689087, y: 0.11400002, z: 0.061194316}
+  m_followingControlPointPosition: {x: -0.24689086, y: 0.11399999, z: 0.061194323}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -1197,11 +1197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 0.121231675, y: 0.11400002, z: 0.2517125}
+  m_position: {x: 0.12123169, y: 0.11399999, z: 0.2517125}
   m_precedingControlPointLocalPosition: {x: -0.078266144, y: 0, z: -0.08327995}
-  m_precedingControlPointPosition: {x: 0.04296553, y: 0.11400002, z: 0.16843255}
+  m_precedingControlPointPosition: {x: 0.042965546, y: 0.11399999, z: 0.16843256}
   m_followingControlPointLocalPosition: {x: -0.08099194, y: 0, z: -0.15067562}
-  m_followingControlPointPosition: {x: 0.040239736, y: 0.11400002, z: 0.10103688}
+  m_followingControlPointPosition: {x: 0.04023975, y: 0.11399999, z: 0.10103687}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -1574,6 +1574,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &851449058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851449059}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &851449059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851449058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12355776, y: 0.34429, z: -0.12119839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 214544858}
+  - {fileID: 1877528997}
+  - {fileID: 506868544}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881735860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,34 +1707,34 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0.0011238232, y: -0.000000014901161, z: 0.018265486}
   - {x: 0.0020493045, y: 0.000000007450581, z: 0.033307638}
-  - {x: 0.0028260574, y: 0, z: 0.04593231}
-  - {x: 0.0035036542, y: 0.000000007450581, z: 0.05694532}
-  - {x: 0.0041316748, y: 0, z: 0.0671525}
-  - {x: 0.004759684, y: 0, z: 0.07735968}
-  - {x: 0.0054372773, y: 0, z: 0.088372685}
+  - {x: 0.0028260648, y: 0, z: 0.04593231}
+  - {x: 0.0035036542, y: 0, z: 0.05694532}
+  - {x: 0.004131671, y: 0, z: 0.0671525}
+  - {x: 0.004759688, y: 0, z: 0.077359684}
+  - {x: 0.0054372773, y: 0.000000007450581, z: 0.08837269}
   - {x: 0.00621403, y: 0, z: 0.10099736}
-  - {x: 0.0071395226, y: 0, z: 0.11603952}
+  - {x: 0.0071395263, y: 0, z: 0.11603952}
   - {x: 0.008263335, y: 0, z: 0.134305}
   - {x: -0.011291452, y: -0.000000014901161, z: 0.14454621}
   - {x: -0.027395412, y: 0.000000007450581, z: 0.15298018}
-  - {x: -0.040911235, y: 0, z: 0.16005868}
-  - {x: -0.052701622, y: 0.000000007450581, z: 0.16623354}
-  - {x: -0.0636293, y: 0, z: 0.17195657}
+  - {x: -0.040911227, y: 0, z: 0.16005868}
+  - {x: -0.052701622, y: 0, z: 0.16623354}
+  - {x: -0.063629285, y: 0, z: 0.17195657}
   - {x: -0.07455698, y: 0, z: 0.17767963}
-  - {x: -0.08634737, y: 0, z: 0.18385449}
+  - {x: -0.08634737, y: 0.000000007450581, z: 0.18385449}
   - {x: -0.09986319, y: 0, z: 0.19093299}
   - {x: -0.115967125, y: 0, z: 0.19936693}
   - {x: -0.13552192, y: 0, z: 0.20960817}
   - {x: -0.14798498, y: -0.000000014901161, z: 0.18311289}
-  - {x: -0.15824872, y: 0.000000007450581, z: 0.16129328}
-  - {x: -0.1668629, y: 0, z: 0.14298037}
-  - {x: -0.17437741, y: 0.000000007450581, z: 0.12700531}
-  - {x: -0.18134207, y: 0, z: 0.11219911}
-  - {x: -0.18830675, y: 0, z: 0.09739295}
-  - {x: -0.19582126, y: 0, z: 0.081417866}
-  - {x: -0.20443544, y: 0, z: 0.06310496}
-  - {x: -0.21469918, y: 0, z: 0.041285325}
-  - {x: -0.22716224, y: 0, z: 0.014790073}
+  - {x: -0.15824871, y: 0.000000007450581, z: 0.1612933}
+  - {x: -0.16686292, y: 0, z: 0.1429804}
+  - {x: -0.17437743, y: 0, z: 0.12700531}
+  - {x: -0.18134208, y: 0, z: 0.11219913}
+  - {x: -0.18830673, y: 0, z: 0.09739295}
+  - {x: -0.19582124, y: 0.000000007450581, z: 0.08141787}
+  - {x: -0.20443545, y: 0, z: 0.063104965}
+  - {x: -0.21469913, y: 0, z: 0.04128533}
+  - {x: -0.22716223, y: 0, z: 0.014790073}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.125
@@ -1881,11 +1914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.035300598, y: 0.11400002, z: 0.085152596}
+  m_position: {x: -0.035300583, y: 0.11399999, z: 0.08515259}
   m_precedingControlPointLocalPosition: {x: -0.002725795, y: 0, z: -0.06739568}
-  m_precedingControlPointPosition: {x: -0.038026392, y: 0.11400002, z: 0.017756917}
+  m_precedingControlPointPosition: {x: -0.038026378, y: 0.11399999, z: 0.017756917}
   m_followingControlPointLocalPosition: {x: 0.07826613, y: 0, z: 0.08327995}
-  m_followingControlPointPosition: {x: 0.04296553, y: 0.11400002, z: 0.16843255}
+  m_followingControlPointPosition: {x: 0.042965546, y: 0.11399999, z: 0.16843256}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -1942,7 +1975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1065116486}
   mHiddenRoot: {fileID: 0}
-  mTargetName: BlueMode
+  mTargetName: blue-mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1065116486}
   mMeshFilter: {fileID: 0}
@@ -2017,13 +2050,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: BlueMode
+  mTrackableName: blue-mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.5000001
+  mAspectRatio: 1.9365064
   mImageTargetType: 0
-  mWidth: 0.03
-  mHeight: 0.045
+  mWidth: 0.32
+  mHeight: 0.619682
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2487,13 +2520,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: automatic-door-3x6cm
+  mTrackableName: GreenMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 1.2018782
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.6
+  mHeight: 0.7211269
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2513,7 +2546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1325772299}
   mHiddenRoot: {fileID: 0}
-  mTargetName: automatic-door-3x6cm
+  mTargetName: GreenMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1325772299}
   mMeshFilter: {fileID: 0}
@@ -2561,11 +2594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: 0.2487133, y: 0.11400002, z: 0.031581923}
+  m_position: {x: 0.2487133, y: 0.11399999, z: 0.03158193}
   m_precedingControlPointLocalPosition: {x: -0.12993017, y: 0, z: 0.02630619}
-  m_precedingControlPointPosition: {x: 0.11878313, y: 0.11400002, z: 0.057888113}
+  m_precedingControlPointPosition: {x: 0.118783146, y: 0.11399999, z: 0.057888113}
   m_followingControlPointLocalPosition: {x: -0.13265596, y: 0, z: -0.041089483}
-  m_followingControlPointPosition: {x: 0.11605734, y: 0.11400002, z: -0.009507559}
+  m_followingControlPointPosition: {x: 0.11605735, y: 0.11399999, z: -0.009507559}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -2618,11 +2651,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.016598627, y: 0.11400002, z: -0.05059705}
+  m_position: {x: -0.016598612, y: 0.11399999, z: -0.05059705}
   m_precedingControlPointLocalPosition: {x: 0.13265596, y: 0, z: 0.041089498}
-  m_precedingControlPointPosition: {x: 0.11605734, y: 0.11400002, z: -0.009507559}
+  m_precedingControlPointPosition: {x: 0.11605735, y: 0.11399999, z: -0.009507559}
   m_followingControlPointLocalPosition: {x: 0.0027258098, y: 0, z: 0.06739567}
-  m_followingControlPointPosition: {x: -0.013872817, y: 0.11400002, z: 0.016798615}
+  m_followingControlPointPosition: {x: -0.013872802, y: 0.11399999, z: 0.016798608}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -2754,26 +2787,26 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0.0007414203, y: -0.000000014901161, z: 0.018331628}
-  - {x: 0.0013520019, y: 0.000000007450581, z: 0.033428248}
-  - {x: 0.0018644528, y: 0, z: 0.046098635}
-  - {x: 0.002311485, y: 0.000000007450581, z: 0.057151526}
-  - {x: 0.002725808, y: 0, z: 0.067395665}
-  - {x: 0.0031401291, y: 0, z: 0.07763981}
-  - {x: 0.0035871603, y: 0, z: 0.088692695}
-  - {x: 0.0040996103, y: 0, z: 0.10136309}
-  - {x: 0.004710188, y: 0, z: 0.11645973}
+  - {x: 0.0007414222, y: -0.000000014901161, z: 0.018331625}
+  - {x: 0.001352001, y: 0.000000007450581, z: 0.033428244}
+  - {x: 0.0018644528, y: 0, z: 0.04609863}
+  - {x: 0.002311484, y: 0, z: 0.05715152}
+  - {x: 0.002725808, y: 0, z: 0.06739566}
+  - {x: 0.00314013, y: 0, z: 0.0776398}
+  - {x: 0.0035871603, y: 0.000000007450581, z: 0.088692695}
+  - {x: 0.0040996093, y: 0, z: 0.101363085}
+  - {x: 0.004710188, y: 0, z: 0.11645972}
   - {x: 0.0054516047, y: 0, z: 0.13479134}
   - {x: 0.040792607, y: -0.000000014901161, z: 0.12763606}
   - {x: 0.069896966, y: 0.000000007450581, z: 0.121743485}
   - {x: 0.094323836, y: 0, z: 0.11679791}
-  - {x: 0.115632385, y: 0.000000007450581, z: 0.11248371}
+  - {x: 0.115632385, y: 0, z: 0.11248371}
   - {x: 0.13538176, y: 0, z: 0.10848516}
-  - {x: 0.15513115, y: 0, z: 0.104486614}
-  - {x: 0.17643969, y: 0, z: 0.10017241}
-  - {x: 0.20086657, y: 0, z: 0.09522684}
-  - {x: 0.22997095, y: 0, z: 0.08933425}
-  - {x: 0.26531193, y: 0, z: 0.08217897}
+  - {x: 0.15513115, y: 0, z: 0.10448662}
+  - {x: 0.1764397, y: 0.000000007450581, z: 0.10017241}
+  - {x: 0.20086655, y: 0, z: 0.09522685}
+  - {x: 0.22997093, y: 0, z: 0.08933426}
+  - {x: 0.2653119, y: 0, z: 0.08217898}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.125
@@ -2932,13 +2965,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Robot2
+  mTrackableName: PinkMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.8293332
+  mAspectRatio: 0.4993
   mImageTargetType: 0
-  mWidth: 0.6
-  mHeight: 1.0976
+  mWidth: 0.06
+  mHeight: 0.029958
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2958,7 +2991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1618029682}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Robot2
+  mTargetName: PinkMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1618029682}
   mMeshFilter: {fileID: 0}
@@ -3010,7 +3043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1619366322}
   mHiddenRoot: {fileID: 0}
-  mTargetName: DefaultMode
+  mTargetName: neutral-mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1619366322}
   mMeshFilter: {fileID: 0}
@@ -3085,13 +3118,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: DefaultMode
+  mTrackableName: neutral-mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 1.9365064
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.32
+  mHeight: 0.619682
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3115,7 +3148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1730513413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3190,7 +3223,7 @@ Transform:
   m_LocalScale: {x: 0.32726422, y: 0.18046, z: 0.11208732}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735085785 stripped
 GameObject:
@@ -3245,11 +3278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.29271105, y: 0.11400002, z: -0.03621473}
+  m_position: {x: -0.29271102, y: 0.11399999, z: -0.03621473}
   m_precedingControlPointLocalPosition: {x: 0.045820177, y: 0, z: 0.09740904}
-  m_precedingControlPointPosition: {x: -0.24689087, y: 0.11400002, z: 0.061194316}
+  m_precedingControlPointPosition: {x: -0.24689086, y: 0.11399999, z: 0.061194323}
   m_followingControlPointLocalPosition: {x: 0.11358111, y: 0, z: -0.007395044}
-  m_followingControlPointPosition: {x: -0.17912993, y: 0.11400002, z: -0.043609776}
+  m_followingControlPointPosition: {x: -0.17912991, y: 0.11399999, z: -0.043609776}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -3643,16 +3676,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877528996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18115357, y: -0.6033938, z: 0.108041696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30471134, y: -0.9476838, z: 0.22924009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1868923816}
   - {fileID: 964533299}
   - {fileID: 139243728}
   - {fileID: 375737729}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 851449059}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949790644
 GameObject:
@@ -3687,7 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1949790647}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Robot1
+  mTargetName: DefaultMode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1949790647}
   mMeshFilter: {fileID: 0}
@@ -3762,13 +3795,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Robot1
+  mTrackableName: DefaultMode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.6666666
+  mAspectRatio: 0.4993
   mImageTargetType: 0
-  mWidth: 0.6
-  mHeight: 0.4
+  mWidth: 0.06
+  mHeight: 0.029958
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3835,7 +3868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2015363183}
   mHiddenRoot: {fileID: 0}
-  mTargetName: PinkMode
+  mTargetName: pink-mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 2015363183}
   mMeshFilter: {fileID: 0}
@@ -3910,13 +3943,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: PinkMode
+  mTrackableName: pink-mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 1.9365064
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.32
+  mHeight: 0.619682
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3965,11 +3998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.06554881, y: 0.11400002, z: -0.051004805}
+  m_position: {x: -0.06554879, y: 0.11399999, z: -0.051004805}
   m_precedingControlPointLocalPosition: {x: -0.11358113, y: 0, z: 0.007395042}
-  m_precedingControlPointPosition: {x: -0.17912993, y: 0.11400002, z: -0.043609776}
+  m_precedingControlPointPosition: {x: -0.17912991, y: 0.11399999, z: -0.043609776}
   m_followingControlPointLocalPosition: {x: 0.0041316748, y: 0, z: 0.06715251}
-  m_followingControlPointPosition: {x: -0.061417133, y: 0.11400002, z: 0.016147695}
+  m_followingControlPointPosition: {x: -0.061417118, y: 0.11399999, z: 0.016147695}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0
@@ -4022,11 +4055,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_position: {x: -0.057285473, y: 0.11400002, z: 0.08330019}
+  m_position: {x: -0.057285458, y: 0.11399999, z: 0.083300196}
   m_precedingControlPointLocalPosition: {x: -0.00413166, y: 0, z: -0.06715249}
-  m_precedingControlPointPosition: {x: -0.061417133, y: 0.11400002, z: 0.016147695}
+  m_precedingControlPointPosition: {x: -0.061417118, y: 0.11399999, z: 0.016147695}
   m_followingControlPointLocalPosition: {x: -0.071892634, y: 0, z: 0.037651584}
-  m_followingControlPointPosition: {x: -0.1291781, y: 0.11400002, z: 0.12095177}
+  m_followingControlPointPosition: {x: -0.12917809, y: 0.11399999, z: 0.120951764}
   m_handleMode: 0
   m_normal: {x: 0, y: 1, z: 0}
   m_autoCalculatedNormalAngleOffset: 0

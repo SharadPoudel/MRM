@@ -245,7 +245,7 @@ public class ArduinoMessageListener : MonoBehaviour
             if (NumberOfRobots < 3)
             {
                 //Adding robots in the box
-                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.0705f)), 0.125f, -0.1f), Quaternion.identity);
+                Instantiate(ObjectToSpawn, new Vector3((-0.075f + (NumberOfRobots * 0.092f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
 
                 for (int i = 0; i < 2; i++)
