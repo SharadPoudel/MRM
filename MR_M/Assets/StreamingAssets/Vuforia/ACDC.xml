@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="robot-1" size="0.320000 0.619682" />
-    <ImageTarget name="pink-mode" size="0.320000 0.619682" />
-    <ImageTarget name="neutral-mode" size="0.320000 0.619682" />
-    <ImageTarget name="green-mode" size="0.320000 0.619682" />
-    <ImageTarget name="blue-mode" size="0.320000 0.619682" />
-    <ImageTarget name="Robot3" size="0.600000 0.788315" />
-    <ImageTarget name="Robot2" size="0.600000 1.097600" />
-    <ImageTarget name="Robot1" size="0.600000 0.400000" />
-    <ImageTarget name="BlueMode" size="0.030000 0.045000" />
-    <ImageTarget name="DefaultMode" size="0.060000 0.029958" />
-    <ImageTarget name="GreenMode" size="0.600000 0.721127" />
-    <ImageTarget name="PinkMode" size="0.060000 0.029958" />
+    <ImageTarget name="Green_Mode" size="0.460000 0.921299" />
+    <ImageTarget name="Green_Mode1" size="0.460000 0.921299" />
+    <ImageTarget name="Blue_Mode" size="0.460000 0.921299" />
+    <ImageTarget name="Robot_2" size="46.000000 92.129944" />
+    <ImageTarget name="Robot_3" size="0.460000 0.921299" />
+    <ImageTarget name="Robot_1" size="0.460000 0.921299" />
+    <ImageTarget name="Neutral_Mode" size="0.460000 0.921299" />
+    <ImageTarget name="Pink_Mode" size="0.460000 0.921299" />
     <ImageTarget name="qrcode" size="9.000000 9.000000" />
     <ImageTarget name="Platform" size="0.220000 0.373254" />
     <ImageTarget name="atm-30x45mm-redmodel-v2" size="0.030000 0.045000" />

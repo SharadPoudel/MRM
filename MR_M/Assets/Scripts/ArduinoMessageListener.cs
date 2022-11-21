@@ -293,9 +293,9 @@ public class ArduinoMessageListener : MonoBehaviour
         }
         else //Knob rotated
         {
-            RoundedValue = Math.Round(float.Parse(msg) / 1000f, 1);
+            RoundedValue = Math.Round(float.Parse(msg), 1);
 
-            if (RoundedValue >= 0 && RoundedValue < 0.25) //Neutral mode
+            if (RoundedValue >= 0 && RoundedValue < 4) //Neutral mode
             {
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
@@ -326,7 +326,7 @@ public class ArduinoMessageListener : MonoBehaviour
                     DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
                 }
             }
-            else if (RoundedValue >= 0.25 && RoundedValue < 0.5) //Pink mode
+            else if (RoundedValue >= 4 && RoundedValue < 8) //Pink mode
             {
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
@@ -357,7 +357,7 @@ public class ArduinoMessageListener : MonoBehaviour
                     DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
                 }
             }
-            else if (RoundedValue >= 0.5 && RoundedValue < 0.75) //Blue mode
+            else if (RoundedValue >= 8 && RoundedValue < 12) //Blue mode
             {
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[2];
@@ -388,7 +388,7 @@ public class ArduinoMessageListener : MonoBehaviour
                     DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
                 }
             }
-            else if (RoundedValue >= 0.75 && RoundedValue < 1) //Green mode
+            else if (RoundedValue >= 12 && RoundedValue < 15) //Green mode
             {
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[3];

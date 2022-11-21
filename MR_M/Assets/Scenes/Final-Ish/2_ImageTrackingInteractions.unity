@@ -804,7 +804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 417256401}
   mHiddenRoot: {fileID: 0}
-  mTargetName: green-mode
+  mTargetName: Green_Mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 417256401}
   mMeshFilter: {fileID: 0}
@@ -879,13 +879,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: green-mode
+  mTrackableName: Green_Mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.9365064
+  mAspectRatio: 2.0028248
   mImageTargetType: 0
-  mWidth: 0.32
-  mHeight: 0.619682
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1065116486}
   mHiddenRoot: {fileID: 0}
-  mTargetName: blue-mode
+  mTargetName: Blue_Mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1065116486}
   mMeshFilter: {fileID: 0}
@@ -2050,13 +2050,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: blue-mode
+  mTrackableName: Blue_Mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.9365064
+  mAspectRatio: 2.0028238
   mImageTargetType: 0
-  mWidth: 0.32
-  mHeight: 0.619682
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2520,13 +2520,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: GreenMode
+  mTrackableName: Robot_3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.2018782
+  mAspectRatio: 2.0028238
   mImageTargetType: 0
-  mWidth: 0.6
-  mHeight: 0.7211269
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1325772299}
   mHiddenRoot: {fileID: 0}
-  mTargetName: GreenMode
+  mTargetName: Robot_3
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1325772299}
   mMeshFilter: {fileID: 0}
@@ -2965,13 +2965,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: PinkMode
+  mTrackableName: Robot_2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 2.0028248
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2991,7 +2991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1618029682}
   mHiddenRoot: {fileID: 0}
-  mTargetName: PinkMode
+  mTargetName: Robot_2
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1618029682}
   mMeshFilter: {fileID: 0}
@@ -3043,7 +3043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1619366322}
   mHiddenRoot: {fileID: 0}
-  mTargetName: neutral-mode
+  mTargetName: Neutral_Mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1619366322}
   mMeshFilter: {fileID: 0}
@@ -3118,13 +3118,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: neutral-mode
+  mTrackableName: Neutral_Mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.9365064
+  mAspectRatio: 2.0028238
   mImageTargetType: 0
-  mWidth: 0.32
-  mHeight: 0.619682
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3720,7 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1949790647}
   mHiddenRoot: {fileID: 0}
-  mTargetName: DefaultMode
+  mTargetName: Robot_1
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 1949790647}
   mMeshFilter: {fileID: 0}
@@ -3795,13 +3795,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: DefaultMode
+  mTrackableName: Robot_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 0.4993
+  mAspectRatio: 2.0028238
   mImageTargetType: 0
-  mWidth: 0.06
-  mHeight: 0.029958
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3868,7 +3868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2015363183}
   mHiddenRoot: {fileID: 0}
-  mTargetName: pink-mode
+  mTargetName: Pink_Mode
   mDatasetName: Vuforia/ACDC.xml
   mCastedBehaviour: {fileID: 2015363183}
   mMeshFilter: {fileID: 0}
@@ -3943,13 +3943,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: pink-mode
+  mTrackableName: Pink_Mode
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ACDC.xml
-  mAspectRatio: 1.9365064
+  mAspectRatio: 2.0028238
   mImageTargetType: 0
-  mWidth: 0.32
-  mHeight: 0.619682
+  mWidth: 0.46
+  mHeight: 0.9212994
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0

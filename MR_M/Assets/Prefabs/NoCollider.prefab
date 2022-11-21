@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2093516452199022805}
   - component: {fileID: 2093516452199022804}
   m_Layer: 5
-  m_Name: Robot2Grab
+  m_Name: NoCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ BoxCollider:
   m_GameObject: {fileID: 1282615286086232408}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.9389484, y: 12.213196, z: 1.0397649}
   m_Center: {x: -0.008807778, y: 7.379795, z: -0.2111356}
