@@ -81,7 +81,7 @@ public class RSImageDetection : MonoBehaviour
 
     public void ModeImageDetected(int Intent)
     {
-        if ( Intent == 0 ) //Neutral mode
+        if ( Intent == 2 ) //Neutral mode changed ***0 to 2
         {
             Debug.Log("Neutral Mode");
             //Changing backgroung
@@ -113,7 +113,7 @@ public class RSImageDetection : MonoBehaviour
                 DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
             }
         }
-        else if ( Intent == 1 ) //Pink mode
+        else if ( Intent == 3 ) //Pink mode it is actually  green *** changed 1 to 3
         {
             Debug.Log("Pink Mode");
             //Changing backgroung
@@ -145,7 +145,7 @@ public class RSImageDetection : MonoBehaviour
                 DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
             }
         }
-        else if (Intent == 2) //Blue mode
+        else if (Intent == 0) //Blue mode ***changed 0 to 2
         {
             Debug.Log("Blue Mode");
             
@@ -178,7 +178,7 @@ public class RSImageDetection : MonoBehaviour
                 DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = LightColors[2];
             }
         }
-        else if (Intent == 3) //Green mode
+        else if (Intent == 1) //Green mode it is actually pint ***changed 3 to 1
         {
             Debug.Log("Green Mode");
             
