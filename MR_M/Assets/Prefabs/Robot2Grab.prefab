@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1911517878538449890}
   - component: {fileID: 2093516452199022805}
   - component: {fileID: 2093516452199022804}
-  m_Layer: 5
+  - component: {fileID: 1190678653}
+  m_Layer: 0
   m_Name: Robot2Grab
-  m_TagString: Untagged
+  m_TagString: Robot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282615286086232408}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.005, y: 0.124, z: -0.169}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
@@ -47,7 +48,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &2093516452199022804
 BoxCollider:
@@ -60,8 +61,39 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9389484, y: 12.213196, z: 1.0397649}
-  m_Center: {x: -0.008807778, y: 7.379795, z: -0.2111356}
+  m_Size: {x: 1.1114736, y: 19.727339, z: 0.90060025}
+  m_Center: {x: -0.024763197, y: 9.267301, z: -0.2111356}
+--- !u!114 &1190678653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282615286086232408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f10fa40360571247a7ca806d6859557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manager: {fileID: 0}
+  _ignoreHoverMode: 0
+  _isIgnoringAllHoverState: 0
+  _ignorePrimaryHover: 0
+  _ignoreContact: 0
+  _ignoreGraspingMode: 0
+  _ignoreGrasping: 0
+  _contactForceMode: 0
+  _allowMultiGrasp: 0
+  _moveObjectWhenGrasped: 1
+  graspedMovementType: 0
+  _overrideInteractionLayer: 0
+  _interactionLayer:
+    layerIndex: 0
+  _overrideNoContactLayer: 0
+  _noContactLayer:
+    layerIndex: 0
+  _eventTable:
+    _entries: []
 --- !u!1 &7800525026855522689
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +125,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911517878538449890}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4188356505008389104
 MeshFilter:
   m_ObjectHideFlags: 0

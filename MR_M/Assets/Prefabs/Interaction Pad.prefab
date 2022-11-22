@@ -522,6 +522,7 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+  ObjectToSpawn: {fileID: 0}
   _controlEnabled: 1
   startingPositionMode: 0
   minMaxHeight: {x: 0, y: 0.02}
@@ -533,6 +534,17 @@ MonoBehaviour:
   _OnUnpress:
     m_PersistentCalls:
       m_Calls: []
+  Backgroud: {fileID: 0}
+  LightColors: []
+  BrightColors: []
+  Materials: []
+  DataFlows: []
+  DataFlowsParent: []
+  Lines: []
+  ObjectNormalSize: 0
+  ObjectBigSize: 0
+  RoundedValue: 0
+  test: 
   sliderType: 2
   dispatchSlideValueOnStart: 1
   overrideRectLimits: 0
@@ -911,7 +923,7 @@ GameObject:
   - component: {fileID: 6907548077127667418}
   - component: {fileID: 6907548077127667417}
   m_Layer: 0
-  m_Name: Cube UI Slider
+  m_Name: Cube UI Slider Knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,6 +996,7 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+  ObjectToSpawn: {fileID: 0}
   _controlEnabled: 1
   startingPositionMode: 0
   minMaxHeight: {x: 0, y: 0.02}
@@ -995,6 +1008,17 @@ MonoBehaviour:
   _OnUnpress:
     m_PersistentCalls:
       m_Calls: []
+  Backgroud: {fileID: 0}
+  LightColors: []
+  BrightColors: []
+  Materials: []
+  DataFlows: []
+  DataFlowsParent: []
+  Lines: []
+  ObjectNormalSize: 0
+  ObjectBigSize: 0
+  RoundedValue: 0
+  test: 
   sliderType: 1
   dispatchSlideValueOnStart: 1
   overrideRectLimits: 0
@@ -1278,7 +1302,7 @@ GameObject:
   - component: {fileID: 6907548077621633432}
   - component: {fileID: 6907548077621633439}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: SlidingSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
