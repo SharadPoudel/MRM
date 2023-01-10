@@ -19,6 +19,7 @@ public class ContainerCollider : MonoBehaviour
 
     public double RoundedValue;
     public String test;
+    public AudioSource RobotAudioSource;
 
     //private Bloom Bloom;
     private ColorParameter ColorParameter;
@@ -86,6 +87,8 @@ public class ContainerCollider : MonoBehaviour
             //cODE hERE 
             if (NumberOfRobots < 3)
             {
+                //RobotAudioSource.Play();
+                
                 //Adding robots in the box
                 Instantiate(ObjectToSpawn, new Vector3((-0.025f + (NumberOfRobots * 0.086f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;

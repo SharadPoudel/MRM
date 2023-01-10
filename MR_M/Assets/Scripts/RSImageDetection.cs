@@ -23,6 +23,8 @@ public class RSImageDetection : MonoBehaviour
 
     public double RoundedValue;
     public String test;
+    public AudioSource RobotAudioSource;
+    public AudioSource ModeAudioSource;
 
     //private Bloom Bloom;
     private ColorParameter ColorParameter;
@@ -48,6 +50,9 @@ public class RSImageDetection : MonoBehaviour
     
     private List<int> TrackedImages;
 
+    private String CurrentMode;
+    private String PreviousMode;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +76,9 @@ public class RSImageDetection : MonoBehaviour
         GreenFlowReverse = DataFlows[5];
 
         TrackedImages = new List<int>();
+
+        CurrentMode = "NeutralMode";
+        PreviousMode = "NeutralMode";
     }
 
     // Update is called once per frame
@@ -83,6 +91,7 @@ public class RSImageDetection : MonoBehaviour
     {
         if ( Intent == 2 ) //Neutral mode changed ***0 to 2
         {
+            CurrentMode = "NeutralMode"; 
             Debug.Log("Neutral Mode");
             //Changing backgroung
             Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
@@ -115,6 +124,7 @@ public class RSImageDetection : MonoBehaviour
         }
         else if ( Intent == 3 ) //Pink mode it is actually  green *** changed 1 to 3
         {
+            CurrentMode = "PinkMode"; 
             Debug.Log("Pink Mode");
             //Changing backgroung
             Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
@@ -147,6 +157,7 @@ public class RSImageDetection : MonoBehaviour
         }
         else if (Intent == 0) //Blue mode ***changed 0 to 2
         {
+            CurrentMode = "BlueMode"; 
             Debug.Log("Blue Mode");
             
             //Changing backgroung
@@ -180,6 +191,7 @@ public class RSImageDetection : MonoBehaviour
         }
         else if (Intent == 1) //Green mode it is actually pint ***changed 3 to 1
         {
+            CurrentMode = "GreenMode"; 
             Debug.Log("Green Mode");
             
             //Changing backgroung
@@ -211,6 +223,12 @@ public class RSImageDetection : MonoBehaviour
                 DataFlowsGreen[i].GetComponent<MeshRenderer>().material.color = BrightColors[2];
             }
         }
+
+        if (!PreviousMode.Equals(CurrentMode))
+        {
+            //ModeAudioSource.Play();
+            PreviousMode = CurrentMode;
+        }
     }
 
     public void RobotsImageDetected(int NumberOfRobot)
@@ -219,9 +237,11 @@ public class RSImageDetection : MonoBehaviour
 
         if (!TrackedImages.Contains(NumberOfRobot))
         {
+            //RobotAudioSource.Play();
+            
             //Adding robots in the box
             //Instantiate(ObjectToSpawn, new Vector3((-0.025f + (TrackedImages.Count * 0.086f)), 0.125f, -0.1f), Quaternion.identity); 
-            
+
             TrackedImages.Add(NumberOfRobot);
             NumberOfRobots++;
 

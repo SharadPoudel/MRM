@@ -868,7 +868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907548077224116294, guid: 112895ea304c5d4488de0f0ed07c1818, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 6907548077224116294, guid: 112895ea304c5d4488de0f0ed07c1818, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3387,6 +3387,7 @@ MonoBehaviour:
   - {fileID: 1577301395}
   RoundedValue: 0
   test: 
+  RobotAudioSource: {fileID: 0}
   colliderList: []
 --- !u!65 &1955120731
 BoxCollider:

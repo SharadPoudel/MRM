@@ -41,6 +41,7 @@ namespace Leap.Unity.Interaction
         public float ObjectBigSize;
         public double RoundedValue;
         public String test;
+        public AudioSource ModeAudioSource;
 
         //private Bloom Bloom;
         private int NumberOfRobots = 0;
@@ -62,6 +63,9 @@ namespace Leap.Unity.Interaction
         private List<GameObject> DataFlowsPink;
         private List<GameObject> DataFlowsBlue;
         private List<GameObject> DataFlowsGreen;
+
+        private String CurrentMode;
+        private String PreviousMode;
 
         public enum SliderType
         {
@@ -285,6 +289,8 @@ namespace Leap.Unity.Interaction
 
             if (RoundedValue >= 0 && RoundedValue < 0.25) //Neutral mode
             {
+                CurrentMode = "NeutralMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
 
@@ -316,6 +322,9 @@ namespace Leap.Unity.Interaction
             }
             else if (RoundedValue >= 0.25 && RoundedValue < 0.5) //Pink mode
             {
+
+                CurrentMode = "PinkMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
 
@@ -347,6 +356,8 @@ namespace Leap.Unity.Interaction
             }
             else if (RoundedValue >= 0.5 && RoundedValue < 0.75) //Blue mode
             {
+                CurrentMode = "BlueMode";
+
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[2];
 
@@ -378,6 +389,9 @@ namespace Leap.Unity.Interaction
             }
             else if (RoundedValue >= 0.75 && RoundedValue < 1) //Green mode
             {
+
+                CurrentMode = "GreenMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[3];
 
@@ -412,7 +426,11 @@ namespace Leap.Unity.Interaction
                 RoundedValue = 0;
             }
 
-
+            if (!PreviousMode.Equals(CurrentMode))
+            {
+                //ModeAudioSource.Play();
+                PreviousMode = CurrentMode;
+            }
 
 
             //CODE TO HERE
@@ -547,6 +565,10 @@ namespace Leap.Unity.Interaction
             PinkFlowReverse = DataFlows[3];
             BlueFlowReverse = DataFlows[4];
             GreenFlowReverse = DataFlows[5];
+
+            CurrentMode = "NeutralMode";
+            PreviousMode = "NeutralMode";
+
             ///////////////
 
             if (_started) return;

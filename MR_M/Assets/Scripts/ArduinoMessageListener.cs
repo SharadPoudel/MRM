@@ -34,6 +34,8 @@ public class ArduinoMessageListener : MonoBehaviour
     public float ObjectBigSize;
     public double RoundedValue;
     public String test;
+    public AudioSource RobotAudioSource;
+    public AudioSource ModeAudioSource;
 
     //private Bloom Bloom;
     private ColorParameter ColorParameter;
@@ -56,6 +58,10 @@ public class ArduinoMessageListener : MonoBehaviour
     private List<GameObject> DataFlowsPink;
     private List<GameObject> DataFlowsBlue;
     private List<GameObject> DataFlowsGreen;
+
+    private String CurrentMode;
+    private String PreviousMode;
+
 
     private void Start()
     {
@@ -83,6 +89,9 @@ public class ArduinoMessageListener : MonoBehaviour
         //DataFlowsPink.Add(PinkFlow);
         //DataFlowsBlue.Add(BlueFlow);
         //DataFlowsGreen.Add(GreenFlow);
+
+        CurrentMode = "NeutralMode";
+        PreviousMode = "NeutralMode";
     }
 
     //private void Update()
@@ -244,6 +253,8 @@ public class ArduinoMessageListener : MonoBehaviour
         {
             if (NumberOfRobots < 3)
             {
+                //RobotAudioSource.Play();
+
                 //Adding robots in the box
                 Instantiate(ObjectToSpawn, new Vector3((-0.025f + (NumberOfRobots * 0.086f)), 0.125f, -0.1f), Quaternion.identity);
                 NumberOfRobots++;
@@ -297,6 +308,8 @@ public class ArduinoMessageListener : MonoBehaviour
 
             if (RoundedValue >= 0 && RoundedValue < 4) //Neutral mode
             {
+                CurrentMode = "NeutralMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[0];
 
@@ -328,6 +341,8 @@ public class ArduinoMessageListener : MonoBehaviour
             }
             else if (RoundedValue >= 4 && RoundedValue < 8) //Pink mode
             {
+
+                CurrentMode = "PinkMode";
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[1];
                 
@@ -359,6 +374,8 @@ public class ArduinoMessageListener : MonoBehaviour
             }
             else if (RoundedValue >= 8 && RoundedValue < 12) //Blue mode
             {
+                CurrentMode = "BlueMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[2];
 
@@ -390,6 +407,8 @@ public class ArduinoMessageListener : MonoBehaviour
             }
             else if (RoundedValue >= 12 && RoundedValue < 15) //Green mode
             {
+                CurrentMode = "GreenMode";
+                
                 //Changing backgroung
                 Backgroud.GetComponent<MeshRenderer>().material = Materials[3];
 
@@ -423,6 +442,13 @@ public class ArduinoMessageListener : MonoBehaviour
             {
                 RoundedValue = 0;
             }
+
+            if (!PreviousMode.Equals(CurrentMode))
+            {
+                //ModeAudioSource.Play();
+                PreviousMode = CurrentMode;
+            }
+
         }
     }
 
