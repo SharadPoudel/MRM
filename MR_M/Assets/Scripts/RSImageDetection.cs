@@ -226,7 +226,7 @@ public class RSImageDetection : MonoBehaviour
 
         if (!PreviousMode.Equals(CurrentMode))
         {
-            //ModeAudioSource.Play();
+            ModeAudioSource.Play();
             PreviousMode = CurrentMode;
         }
     }
@@ -237,7 +237,7 @@ public class RSImageDetection : MonoBehaviour
 
         if (!TrackedImages.Contains(NumberOfRobot))
         {
-            //RobotAudioSource.Play();
+            RobotAudioSource.Play();
             
             //Adding robots in the box
             //Instantiate(ObjectToSpawn, new Vector3((-0.025f + (TrackedImages.Count * 0.086f)), 0.125f, -0.1f), Quaternion.identity); 

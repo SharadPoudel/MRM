@@ -42,6 +42,8 @@ namespace Leap.Unity.Interaction
         public double RoundedValue;
         public String test;
         public AudioSource ModeAudioSource;
+        public AudioSource SliderEnterAudioSource;
+
 
         //private Bloom Bloom;
         private int NumberOfRobots = 0;
@@ -284,6 +286,9 @@ namespace Leap.Unity.Interaction
             }
 
             //CODE HERE.. CHANGE HORIZONTAL VALUE AS ZERO 
+
+                SliderEnterAudioSource.Play();
+                
             double RoundedValue = Math.Round(HorizontalSliderValue, 1);
             //IntentValue.text = "Intent Value = " + RoundedValue.ToString();
 
@@ -428,7 +433,7 @@ namespace Leap.Unity.Interaction
 
             if (!PreviousMode.Equals(CurrentMode))
             {
-                //ModeAudioSource.Play();
+                ModeAudioSource.Play();
                 PreviousMode = CurrentMode;
             }
 
