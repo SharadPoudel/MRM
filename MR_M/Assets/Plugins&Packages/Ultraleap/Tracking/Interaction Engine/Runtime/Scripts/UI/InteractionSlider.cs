@@ -270,6 +270,11 @@ namespace Leap.Unity.Interaction
             }
         }
 
+        private void startCollisionSound()
+		{
+            SliderEnterAudioSource.Play();
+        }
+
         private void calculateSliderValues()
         {
             // Calculate renormalized slider values.
@@ -287,8 +292,6 @@ namespace Leap.Unity.Interaction
 
             //CODE HERE.. CHANGE HORIZONTAL VALUE AS ZERO 
 
-                SliderEnterAudioSource.Play();
-                
             double RoundedValue = Math.Round(HorizontalSliderValue, 1);
             //IntentValue.text = "Intent Value = " + RoundedValue.ToString();
 
@@ -540,11 +543,13 @@ namespace Leap.Unity.Interaction
         {
             base.OnEnable();
 
+            OnContactBegin += startCollisionSound;
             OnContactStay += calculateSliderValues;
         }
 
         protected override void OnDisable()
         {
+            OnContactBegin -= startCollisionSound;
             OnContactStay -= calculateSliderValues;
 
             base.OnDisable();
